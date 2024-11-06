@@ -33,6 +33,7 @@ clean.example.data <- example.data %>%
                 site.number == "site 3" ~ "3",
                 TRUE ~ site.number))
 
+unique(clean.example.data)
 
 ##save outputs as csv
 write.csv(clean.example.data, "../outputs/clean.example.data.csv", row.names = FALSE)
